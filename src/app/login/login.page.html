@@ -1,0 +1,111 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-input label="Nombre del Usuario" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Introduzca la contraseña" type="password" value="contraseña"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input labelPlacement="stacked" label="Correo Electronico" placeholder="email@domain.com">
+          <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+          <ion-button fill="clear" slot="end" aria-label="Show/hide">
+            <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Numero de telefono" type="tel" placeholder="888-888-8888"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+
+  <ion-checkbox> Terminos y condiciones </ion-checkbox>
+
+  <ion-button expand="block" (click)="onClick">Iniciar sesion </ion-button> 
+
+  <ion-tabs>
+    <ion-tab tab="home">
+      <div id="home-page">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Listen now</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <div class="example-content">Listen now content</div>
+        </ion-content>
+      </div>
+    </ion-tab>
+    <ion-tab tab="radio">
+      <div id="radio-page">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Radio</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <div class="example-content">Radio content</div>
+        </ion-content>
+      </div>
+    </ion-tab>
+    <ion-tab tab="library">
+      <div id="library-page">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Library</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <div class="example-content">Library content</div>
+        </ion-content>
+      </div>
+    </ion-tab>
+    <ion-tab tab="search">
+      <div id="search-page">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Search</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <div class="example-content">Search content</div>
+        </ion-content>
+      </div>
+    </ion-tab>
+  
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="play-circle"></ion-icon>
+        Listen Now
+      </ion-tab-button>
+      <ion-tab-button tab="radio">
+        <ion-icon name="radio"></ion-icon>
+        Radio
+      </ion-tab-button>
+      <ion-tab-button tab="library">
+        <ion-icon name="library"></ion-icon>
+        Library
+      </ion-tab-button>
+      <ion-tab-button tab="search">
+        <ion-icon name="search"></ion-icon>
+        Search
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

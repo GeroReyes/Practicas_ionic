@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Estadísticas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Estadísticas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- ------------------------------------------------------------------------------- -->
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Usuarios Activos</ion-label>
+      <ion-badge style="--background: #FF5733; color: #FFFFFF;">1500</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Proyectos Creados</ion-label>
+      <ion-badge style="--background: #33FF57; color: #000000;">320</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tareas Pendientes</ion-label>
+      <ion-badge style="--background: #3357FF; color: #FFFFFF;">45</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mensajes Recibidos</ion-label>
+      <ion-badge style="--background: #FF33A8; color: #FFFFFF;">800</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Alertas Generadas</ion-label>
+      <ion-badge style="--background: #FFFF33; color: #000000;">12</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Eventos Programados</ion-label>
+      <ion-badge style="--background: #8C33FF; color: #FFFFFF;">6</ion-badge>
+    </ion-item>
+  </ion-list>
+
+  <!-- ------------------------------------------------------------------------------- -->
+  <br>
+  <ion-list>
+    <ion-item>
+      <ion-badge slot="start" style="--background: #33FFE6; color: #000000;">5</ion-badge>
+      <ion-label>Errores Críticos</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-badge slot="end" style="--background: #FF8C33; color: #FFFFFF;">18</ion-badge>
+      <ion-label>Actualizaciones Recientes</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- ------------------------------------------------------------------------------- -->
+  <br>
+  <ion-list>
+    <ion-item>
+      <ion-label>Conexiones Estables</ion-label>
+      <ion-badge style="--background: #B833FF; color: #FFFFFF;">100%</ion-badge>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
